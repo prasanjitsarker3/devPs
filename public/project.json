@@ -1,0 +1,133 @@
+[
+  {
+    "id": 1,
+    "name": "Full Stack Bike Management Dashboard Application(MERN)",
+    "image": "https://i.ibb.co/gD7cmt3/Screenshot-2024-03-02-185142.png",
+    "allImage": [
+      {
+        "id": 1,
+        "img": "https://i.ibb.co/gD7cmt3/Screenshot-2024-03-02-185142.png"
+      },
+      {
+        "id": 1,
+        "img": "https://i.ibb.co/gD7cmt3/Screenshot-2024-03-02-185142.png"
+      },
+      {
+        "id": 1,
+        "img": "https://i.ibb.co/gD7cmt3/Screenshot-2024-03-02-185142.png"
+      }
+    ],
+    "title": "I developed a Bike Management application using MERN technologies. Users can create accounts, order bikes, request services, and manage orders from the dashboard. Role-based functionality and UI were implemented.",
+    "clientCode": "https://github.com/Porgramming-Hero-web-course/l2-b2-assignment-6-fronten-prasanjitsarker3",
+    "serverCode": "https://github.com/Porgramming-Hero-web-course/l2-b2-assignment-6-backend-prasanjitsarker3",
+    "live": "https://super-bombolone-1cd8cb.netlify.app",
+    "details": "I developed a Bike Management application using MERN technologies. Users can create accounts, order bikes, request services, and manage orders from the dashboard. Role-based functionality and UI were implemented.",
+    "technologies": [
+      "Node JS",
+      "TypeScript",
+      "Mongoose",
+      "React JS",
+      "Redux",
+      "React-Hook-From",
+      "Ant Design",
+      "Tailwind",
+      "JWT",
+      "Zod"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Full Stack Art Craft Course Application(MERN)",
+    "image": "https://i.ibb.co/crVXGzr/Screenshot-2023-07-01-161625.png",
+    "allImage": [
+      {
+        "id": "1",
+        "img": "https://i.ibb.co/crVXGzr/Screenshot-2023-07-01-161625.png"
+      },
+      {
+        "id": "2",
+        "img": "https://i.ibb.co/5xvygP9/Screenshot-2024-03-03-220116.png"
+      },
+      {
+        "id": "3",
+        "img": "https://i.ibb.co/8zvnZS7/Screenshot-2024-03-03-220319.png"
+      }
+    ],
+    "title": "I developed a Art Craft Course application using MERN technologies. Users can create accounts, order bikes, request services, and manage orders from the dashboard. Role-based functionality and UI were implemented.",
+    "clientCode": "https://github.com/prasanjitsarker3/Art-Craft-Course-Management",
+    "serverCode": "https://github.com/prasanjitsarker3/Art-Craft-Course-Management-Server",
+    "live": "https://cartandcarft.web.app",
+    "details": "I developed a Bike Management application using MERN technologies. A comprehensive online course searching web application built using ReactJS, Node JS, MongoDB. It includes user, instructor, and admin dashboard panels. Users can enroll in courses and confirm payments, while instructors can add courses. Admins have control over the entire website. User data is stored in Firebase and MongoDB, ensuring data security through JWT (JSON Web Tokens) and AxiosSecure.",
+
+    "technologies": [
+      "Node JS",
+      "Express JS",
+      "MongoDB",
+      "React JS",
+      "React-Hook-From",
+      "Daisy UI",
+      "Tailwind",
+      "Firebase",
+      "Jwt"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Full Stack Doctor Online Appointment Application(MERN)",
+    "image": "https://i.ibb.co/DRWH7k3/Screenshot-2024-03-03-223043.png",
+    "allImage": [
+      {
+        "id": "1",
+        "img": "https://i.ibb.co/DRWH7k3/Screenshot-2024-03-03-223043.png"
+      },
+      {
+        "id": "2",
+        "img": "https://i.ibb.co/5jRGGNV/Screenshot-2024-03-03-223219.png"
+      },
+      {
+        "id": "3",
+        "img": "https://i.ibb.co/QF80Bkk/Screenshot-2024-03-03-223112.png"
+      }
+    ],
+    "title": "I developed a Bike Management application using MERN technologies. Users can create accounts, order bikes, request services, and manage orders from the dashboard. Role-based functionality and UI were implemented.",
+    "clientCode": "https://github.com/prasanjitsarker3/doctor-portal",
+    "serverCode": "https://github.com/prasanjitsarker3/doctor-portal-server",
+    "live": "https://doctor-management-9b2bf.web.app",
+    "details": "Designed and implemented a user-friendly interface for patients to book appointments online, reducing wait times and improving accessibility. Users can conveniently schedule appointments via email and engage in online consultations with doctors at their convenience. The system features both user and admin dashboards for accessing detailed information",
+    "technologies": [
+      "Node JS",
+      "Express JS",
+      "MongoDB",
+      "React JS",
+      "React-Hook-From",
+      "Material Tailwind",
+      "Tailwind",
+      "Firebase",
+      "Jwt"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Online quiz Application(JavaScript, React JS)",
+    "image": "https://i.ibb.co/pJ9d8t6/Screenshot-2024-03-04-203248.png",
+    "allImage": [
+      {
+        "id": "1",
+        "img": "https://i.ibb.co/pJ9d8t6/Screenshot-2024-03-04-203248.png"
+      },
+      {
+        "id": "2",
+        "img": "https://i.ibb.co/z4p5nxb/Screenshot-2024-03-04-203613.png"
+      },
+      {
+        "id": "3",
+        "img": "https://i.ibb.co/q72y1b0/Screenshot-2024-03-04-203637.png"
+      }
+    ],
+    "title": "I developed a Bike Management application using MERN technologies. Users can create accounts, order bikes, request services, and manage orders from the dashboard. Role-based functionality and UI were implemented.",
+    "clientCode": "https://github.com/prasanjitsarker3/CodeA1/tree/main/QuizHero",
+    "live": "https://super-bombolone-1cd8cb.netlify.app",
+    "details": "I developed a Bike Management application using MERN technologies. Users can create accounts, order bikes, request services, and manage orders from the dashboard. Role-based functionality and UI were implemented.",
+    "technologies": ["JavaScript", "React JS", "Tailwind"]
+  }
+]
