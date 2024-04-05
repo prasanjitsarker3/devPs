@@ -1,27 +1,37 @@
 import { Button, Chip } from "@material-tailwind/react";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import ViewSkeleton from "./ViewSkeleton";
 
 const ViewDetails = () => {
   const { id } = useParams();
   const [data, setData] = useState(null);
   const [details, setDetails] = useState([]);
-
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
+    setLoading(true);
     fetch("/project.json")
       .then((res) => res.json())
-      .then((data) => setData(data));
+      .then((data) => {
+        setData(data);
+        setLoading(false);
+      });
   }, []);
   console.log(id);
   useEffect(() => {
     if (data && id) {
       const detailData = data.filter((item) => item.id == id);
       setDetails(detailData);
+      setLoading(false);
     }
   }, [data, id]);
   const viewData = details[0];
+
+  if (loading || !viewData) {
+    return <ViewSkeleton />;
+  }
   return (
-    <div className="md:px-20 px-8 space-y-5">
+    <div className="md:px-20 px-8 space-y-5 pb-12">
       <div className=" grid md:grid-cols-3 w-full   pt-8">
         {details[0]?.allImage.map((item) => (
           <img
@@ -33,7 +43,9 @@ const ViewDetails = () => {
           />
         ))}
       </div>
-      <h1 className=" fontPop text-2xl ">{viewData?.name}</h1>
+      <h1 className=" fontPop text-2xl text-[#009975]  font-medium">
+        {viewData?.name}
+      </h1>
       <div className="flex flex-wrap gap-2">
         <a href={viewData?.clientCode} target="_blank">
           <Button size="sm" color="blue">

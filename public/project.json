@@ -9,19 +9,19 @@
         "img": "https://i.ibb.co/gD7cmt3/Screenshot-2024-03-02-185142.png"
       },
       {
-        "id": 1,
-        "img": "https://i.ibb.co/gD7cmt3/Screenshot-2024-03-02-185142.png"
+        "id": 2,
+        "img": "https://i.ibb.co/FznZzVs/Screenshot-2024-03-02-185037.png"
       },
       {
-        "id": 1,
-        "img": "https://i.ibb.co/gD7cmt3/Screenshot-2024-03-02-185142.png"
+        "id": 3,
+        "img": "https://i.ibb.co/FmQDxGK/Screenshot-2024-03-02-185216.png"
       }
     ],
     "title": "I developed a Bike Management application using MERN technologies. Users can create accounts, order bikes, request services, and manage orders from the dashboard. Role-based functionality and UI were implemented.",
     "clientCode": "https://github.com/Porgramming-Hero-web-course/l2-b2-assignment-6-fronten-prasanjitsarker3",
     "serverCode": "https://github.com/Porgramming-Hero-web-course/l2-b2-assignment-6-backend-prasanjitsarker3",
     "live": "https://super-bombolone-1cd8cb.netlify.app",
-    "details": "I developed a Bike Management application using MERN technologies. Users can create accounts, order bikes, request services, and manage orders from the dashboard. Role-based functionality and UI were implemented.",
+    "details": "I developed a Bike Management application using MERN technologies. There are two types of roles: User and Manager. The Manager is responsible for creating new bikes, managing the publication of all bikes, updating bike data, handling duplication and deletion, and managing bike orders. Users can create accounts, order bikes, and request servicing. Servicing includes the possibility of users receiving discounts for their next servicing. Managers oversee all service requests, assign the next servicing date for bikes, and maintain bike order history on a daily, weekly, and monthly basis. Additionally, Managers can offer bike driving courses, allowing users to enroll and receive certification upon completion.",
     "technologies": [
       "Node JS",
       "TypeScript",
@@ -53,7 +53,7 @@
         "img": "https://i.ibb.co/8zvnZS7/Screenshot-2024-03-03-220319.png"
       }
     ],
-    "title": "I developed a Art Craft Course application using MERN technologies. Users can create accounts, order bikes, request services, and manage orders from the dashboard. Role-based functionality and UI were implemented.",
+    "title": "I developed a Art Craft Course application using MERN technologies. Role-based functionality and UI were implemented.",
     "clientCode": "https://github.com/prasanjitsarker3/Art-Craft-Course-Management",
     "serverCode": "https://github.com/prasanjitsarker3/Art-Craft-Course-Management-Server",
     "live": "https://cartandcarft.web.app",
@@ -89,7 +89,7 @@
         "img": "https://i.ibb.co/QF80Bkk/Screenshot-2024-03-03-223112.png"
       }
     ],
-    "title": "I developed a Bike Management application using MERN technologies. Users can create accounts, order bikes, request services, and manage orders from the dashboard. Role-based functionality and UI were implemented.",
+    "title": "Develop an online doctor appointment application using the MERN (MongoDB, Express.js, React.js, Node.js) technology stack..Role-based functionality and UI were implemented.",
     "clientCode": "https://github.com/prasanjitsarker3/doctor-portal",
     "serverCode": "https://github.com/prasanjitsarker3/doctor-portal-server",
     "live": "https://doctor-management-9b2bf.web.app",
@@ -124,7 +124,7 @@
         "img": "https://i.ibb.co/q72y1b0/Screenshot-2024-03-04-203637.png"
       }
     ],
-    "title": "I developed a Bike Management application using MERN technologies. Users can create accounts, order bikes, request services, and manage orders from the dashboard. Role-based functionality and UI were implemented.",
+    "title": "Develop an Online quiz website using the Javascript and React JS technology stack.",
     "clientCode": "https://github.com/prasanjitsarker3/CodeA1/tree/main/QuizHero",
     "live": "https://super-bombolone-1cd8cb.netlify.app",
     "details": "I developed a Bike Management application using MERN technologies. Users can create accounts, order bikes, request services, and manage orders from the dashboard. Role-based functionality and UI were implemented.",

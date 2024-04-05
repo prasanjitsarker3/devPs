@@ -6,50 +6,118 @@ import nodejs from "../../assets/nodejs-icon.svg";
 import mongodb from "../../assets/mongodb-original.svg";
 import { TypeAnimation } from "react-type-animation";
 import { FaDev, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Banner = () => {
+  const handleDownload = () => {
+    const url =
+      "https://drive.google.com/file/d/1vigDwlgL2FARzZQAhTCSe1K3hmLtLDCz/view?usp=drive_link";
+    const link = document.createElement("a");
+    link.href = url;
+    link.setAttribute("download", true);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  const leftAnimation = {
+    hidden: {
+      opacity: 0,
+      x: "-100vw",
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        delay: 0.5,
+        type: "spring",
+        stiffness: 100,
+      },
+    },
+  };
+  const rightAnimation = {
+    hidden: {
+      opacity: 0,
+      x: "100vw",
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        delay: 0.5,
+        type: "spring",
+        stiffness: 100,
+      },
+    },
+  };
   return (
-    <div>
+    <div id="home">
       <div className=" flex-wrap md:flex w-full md:h-[90vh] justify-center items-center mx-auto ">
-        <div className="lg:w-1/2 w-full space-y-3 md:pt-0 pt-10">
-          <Typography className="fontPop font-medium md:text-4xl text-3xl">
-            Hi,I'm Prasanjit Sarker
+        <motion.div
+          variants={leftAnimation}
+          initial="hidden"
+          animate="visible"
+          className="lg:w-1/2 w-full space-y-3 md:pt-0 pt-10 overflow-hidden!"
+        >
+          <Typography className="fontPop font-medium md:text-4xl text-3xl text-[#2C3335]">
+            Hi,I'm{" "}
+            <span className="fontSec font-medium md:text-3xl text-3xl text-[#2ecc72]">
+              Prasanjit Sarker !
+            </span>
           </Typography>
-          <div className="py-2  md:text-4xl text-3xl font-serif">
+          <div className="py-2  md:text-4xl text-2xl font-serif fontThird font-semibold text-[#2C3335] ">
             <TypeAnimation
               sequence={[
                 "Mern Stack Developer",
                 1000,
                 "Font-End Wev Developer",
                 1000,
+                "Full Stack Developer",
+                1000,
               ]}
               className="py-5 "
               repeat={Infinity}
             />
           </div>
-          <Typography className="md:text-lg text-md font-normal fontPop text-justify">
+          <Typography className="md:text-lg text-md font-normal fontPop text-[#2C3335] text-justify">
             As a dedicated and ambitious B.Tech. student specializing in
             information technology, I am extremely interested in technology and
             problem-solving, am committed to excelling in the IT field, and hope
             to make a significant contribution by providing creative solutions.
           </Typography>
           <div className=" flex gap-3 py-3">
-            <div className="bg-blue-gray-100 p-2 inline-block rounded-full shadow-md cursor-pointer transition duration-300 ease-in-out transform hover:bg-blue-700 hover:text-white">
+            <a
+              href="https://github.com/prasanjitsarker3"
+              target="_blank"
+              className="bg-blue-gray-100 p-2 inline-block rounded-full shadow-md cursor-pointer transition duration-300 ease-in-out transform hover:bg-blue-700 hover:text-white"
+            >
               <FaGithub className="h-6 w-6" />
-            </div>
-            <div className="bg-blue-gray-100 text-blue-700 p-2 inline-block rounded-full shadow-md cursor-pointer transition duration-300 ease-in-out transform hover:bg-blue-700 hover:text-white">
+            </a>
+            <a
+              href="https://www.facebook.com/prasanjit.sarker.56"
+              target="_blank"
+              className="bg-blue-gray-100 text-blue-700 p-2 inline-block rounded-full shadow-md cursor-pointer transition duration-300 ease-in-out transform hover:bg-blue-700 hover:text-white"
+            >
               <FaFacebook className="h-6 w-6" />
-            </div>
-            <div className="bg-blue-gray-100 text-blue-700 p-2 inline-block rounded-full shadow-md cursor-pointer transition duration-300 ease-in-out transform hover:bg-blue-700 hover:text-white">
+            </a>
+            <a
+              href="https://www.linkedin.com/in/prasanjit-sarker-49a0b7220/"
+              target="_blank"
+              className="bg-blue-gray-100 text-blue-700 p-2 inline-block rounded-full shadow-md cursor-pointer transition duration-300 ease-in-out transform hover:bg-blue-700 hover:text-white"
+            >
               <FaLinkedin className="h-6 w-6" />
-            </div>
-            <div className="bg-blue-gray-100 p-2 inline-block rounded-full shadow-md cursor-pointer transition duration-300 ease-in-out transform hover:bg-blue-700 hover:text-white">
+            </a>
+            <a
+              href="https://dev.to/prasanjitsarker3"
+              target="_blank"
+              className="bg-blue-gray-100 p-2 inline-block rounded-full shadow-md cursor-pointer transition duration-300 ease-in-out transform hover:bg-blue-700 hover:text-white"
+            >
               <FaDev className="h-6 w-6" />
-            </div>
+            </a>
           </div>
-          <div className=" flex gap-3">
+          <div className=" flex gap-3 ">
             <button class="shadow__btn">Hire Me</button>
-            <div className=" cursor-pointer">
+            <div onClick={handleDownload} className=" cursor-pointer ">
               <div class="button">
                 <div class="button-wrapper">
                   <div class="text">Download Resume</div>
@@ -77,8 +145,14 @@ const Banner = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="lg:w-1/2 flex justify-center w-full">
+        </motion.div>
+
+        <motion.div
+          variants={rightAnimation}
+          initial="hidden"
+          animate="visible"
+          className="lg:w-1/2 flex justify-center w-full overflow-hidden"
+        >
           <div className="p-5 relative">
             <Lottie
               className="w-full h-full rounded-full"
@@ -111,7 +185,7 @@ const Banner = () => {
               alt=""
             />
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

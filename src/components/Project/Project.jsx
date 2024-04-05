@@ -17,29 +17,45 @@ const Project = () => {
       .then((data) => setData(data));
   }, []);
   return (
-    <div className=" bg-gray-50 py-5">
-      <h1 className=" text-2xl fontPop font-serif font-semibold">
+    <div id="project" className="py-5 max-w-full ">
+      <h1
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        className=" text-2xl fontPop font-serif font-bold pb-8 text-[#009975]"
+      >
         Projects...
       </h1>
-      <div className=" grid md:grid-cols-2 gap-7 justify-center items-center w-full">
+      <div className=" grid md:grid-cols-2 gap-7 mx-auto  justify-evenly">
         {data.map((item) => (
-          <Card key={item.id} className="mt-6 w-96 mx-auto">
-            <CardHeader color="blue-gray" className="relative h-48">
+          <Card
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            key={item.id}
+            className="mt-6 md:w-96 w-full mx-auto"
+          >
+            <CardHeader color="blue-gray" className="relative h-60">
               <img src={item.image} alt="card-image" className="h-full" />
             </CardHeader>
-            <CardBody>
-              <Typography variant="h5" color="blue-gray" className="mb-2">
+            <CardBody className=" mb-0 pb-3 ">
+              <Typography
+                color="blue-gray"
+                className=" text-lg font-medium text-[#009975]"
+              >
                 {item.name}
               </Typography>
 
               <Typography className=" text-justify">
-                {item.title.slice(0, 128)}...
+                {item.title.slice(0, 84)}...
               </Typography>
             </CardBody>
-            <Link to={`/details/${item.id}`} className="p-0 m-0 mb-5 w-full  ">
+            <Link
+              to={`/details/${item.id}`}
+              className="p-0 m-0 mb-5 w-full px-12 "
+            >
               <Button
                 variant="outlined"
-                className="mx-auto flex justify-center"
+                color="blue"
+                className="mx-auto flex justify-center w-full "
               >
                 See Details
               </Button>

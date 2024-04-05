@@ -11,6 +11,16 @@ body {
 .fontPop {
   font-family: "Poppins";
 }
+.fontSec {
+  font-family: "Sulphur Point";
+  font-weight: 700;
+}
+.fontFour {
+  font-family: "Poiret One";
+}
+.fontThird {
+  font-family: "Gruppo";
+}
 
 /* Button section implement */
 .shadow__btn {
@@ -27,25 +37,27 @@ body {
 }
 
 .shadow__btn {
-  background: rgb(0, 140, 255);
-  box-shadow: 0 0 25px rgb(0, 140, 255);
+  background: #2ecc72;
+  font-weight: 500;
+  /* box-shadow: 0 0 25px rgb(0, 140, 255); */
 }
 
-.shadow__btn:hover {
+/* .shadow__btn:hover {
   box-shadow: 0 0 5px rgb(0, 140, 255), 0 0 25px rgb(0, 140, 255),
     0 0 50px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255);
-}
+} */
 
 /* Download Button Information */
 .button {
   --width: 180px;
   --height: 35px;
-  --button-color: #1163ff;
+  --button-color: #2ecc72;
   width: var(--width);
   height: var(--height);
   background: var(--button-color);
   position: relative;
   text-align: center;
+  font-weight: 500;
   border-radius: 0.45em;
   /* font-family: "Arial"; */
   transition: background 0.3s;
@@ -107,7 +119,7 @@ body {
 }
 
 .button:hover {
-  background: #6c18ff;
+  background: #26ae60;
 }
 
 .button:hover .text {
