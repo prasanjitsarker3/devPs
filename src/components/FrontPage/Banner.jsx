@@ -11,10 +11,11 @@ import { motion } from "framer-motion";
 const Banner = () => {
   const handleDownload = () => {
     const url =
-      "https://drive.google.com/file/d/1vigDwlgL2FARzZQAhTCSe1K3hmLtLDCz/view?usp=drive_link";
+      "https://drive.google.com/file/d/1ScJqlBcCSNk-furndTeU5QB5ZVcRy74-/view?usp=sharing";
     const link = document.createElement("a");
     link.href = url;
     link.setAttribute("download", true);
+    link.setAttribute("target", "_blank");
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

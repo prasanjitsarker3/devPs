@@ -126,8 +126,8 @@
     ],
     "title": "Develop an Online quiz website using the Javascript and React JS technology stack.",
     "clientCode": "https://github.com/prasanjitsarker3/CodeA1/tree/main/QuizHero",
-    "live": "https://super-bombolone-1cd8cb.netlify.app",
-    "details": "I developed a Bike Management application using MERN technologies. Users can create accounts, order bikes, request services, and manage orders from the dashboard. Role-based functionality and UI were implemented.",
+    "live": "https://superlative-starship-92d73e.netlify.app",
+    "details": "Create an online quiz application with react js and javascript. Anyone can take a quiz exam and receive the results. The user must first start the quiz, and there is a time limit of 60 seconds.When the timer runs out, automatically submit the quiz. The user selects question options and submits them, which then displays how the questions are correct and incorrect. The total result is shown in the results section. Sentence correction alone.",
     "technologies": ["JavaScript", "React JS", "Tailwind"]
   }
 ]
